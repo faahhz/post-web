@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta title="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POST</title>
+    <style>
+      table {
+        width: 600px;
+      }
+      th,
+      td {
+        padding: 8px;
+        text-align: center;
+      }
+      a {
+          text-decoration: none;
+          padding: 4px 8px;
+          color: white;
+          background-color: maroon;
+          border: none;
+      }
+      a:hover {
+          color: maroon;
+          background-color: white;
+          border: 1px solid black;
+      }
+      .form-main {
+          width: 600px;
+      }
+      .form-group {
+          width: 100%;
+          margin-bottom: 8px;
+      }
+      button {
+          background-color: green;
+          padding: 4px 8px;
+          color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Home Page</h1>
+
+    <a href="/allpost">All-Post</a>
+    <a href="/addnew"">Add New</a>
+    <a href="/preview">Previews</a>
+    <hr />
+    <h3>Add Lecturer</h3>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptate
+      minima a unde assumenda laboriosam ex labore suscipit nihil. Eos
+      asperiores adipisci officiis, aspernatur error vero saepe temporibus iusto
+      quasi.
+    </p>
+    <div class="form-main">
+        <form action="/addnew" method="post">
+            <div class="form-group">
+                <label for="">Title</label>
+                <input type="text" title="title">
+            </div>
+            <div class="form-group">
+                <label for="">Content</label>
+                <input type="text" title="content">
+            </div>
+            <div class="form-group">
+                <label for="">Category</label>
+                <input type="text" title="category">
+            </div>
+            <div class="form-group">
+              <input type="hidden" title="created_date">
+          </div>
+          <div class="form-group">
+              <input type="hidden" title="update_date">
+          </div>
+          <div class="form-group">
+            <label for="">Publish</label>
+            <input type="radio"  name="status" value= "publish">
+            
+          </div>
+          <div class="form-group">
+            <label for="">Draft</label>
+            <input type="radio"  name="status" value= "draft">
+            
+          </div>
+          <div class="form-group">
+            <button type="submit">Submit</button>
+        </div>
+        </form>
+    </div>
+  </body>
+</html>

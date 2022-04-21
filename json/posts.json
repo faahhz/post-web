@@ -1,0 +1,39 @@
+[
+   {
+      "id": 1,
+      "title": "fik",
+      "content": "fv",
+      "category": "gfg",
+      "created_date": "2022-04-12",
+      "updated_date": "2022-04-20T10:08:10.302Z",
+      "status": "publish"
+   },
+   {
+      "id": 2,
+      "created_date": "2022-04-20",
+      "updated_date": "2022-04-20"
+   },
+   {
+      "id": 3,
+      "created_date": "2022-04-20",
+      "updated_date": "2022-04-20",
+      "status": "draft"
+   },
+   {
+      "id": 4,
+      "created_date": "publish",
+      "updated_date": "2022-04-20"
+   },
+   {
+      "id": 5,
+      "created_date": "draft"
+   },
+   {
+      "id": 6,
+      "status": "publish"
+   },
+   {
+      "id": 7,
+      "status": "draft"
+   }
+]

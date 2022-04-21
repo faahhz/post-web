@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POST</title>
+    <style>
+      table {
+        width: 600px;
+      }
+      th,
+      td { 
+        padding: 8px;
+        text-align: center;
+      }
+      a {
+        text-decoration: none;
+        padding: 4px 8px;
+        color: white;
+        background-color: maroon;
+        border: none;
+      }
+      a:hover {
+        color: maroon;
+        background-color: white;
+        border: 1px solid black;
+      }
+      a.information-user {
+        border: none;
+        background-color: white;
+        text-decoration: none;
+        font-weight: bold;
+        color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Home Page</h1>
+
+    <a href="/allpost">All-Post</a>
+    <a href="/addnew"">Add New</a>
+    <a href="/preview">Previews</a>
+    <hr />
+    <h3>Lecturers Page</h3>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis voluptate
+      minima a unde assumenda laboriosam ex labore suscipit nihil. Eos
+      asperiores adipisci officiis, aspernatur error vero saepe temporibus iusto
+      quasi.
+    </p>
+    <div>
+      <table border="1" cellspacing="0">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>subject</th>
+            <th>age</th>
+            <th>city</th>
+      
+          </tr>
+        </thead>
+        <tbody>
+          <% Posts.forEach(post => { %>
+          <tr>
+            <td><%= post.id %></td>
+            <td>
+              <a
+                class="information-user"
+                href="/article/information/<%=post.id%>"
+              >
+                <%= post.name %>
+              </a>
+            </td>
+            <td><%= post.subject %></td>
+            <td><%= post.age %></td>
+            <td><%= post.city %></td>
+          </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
